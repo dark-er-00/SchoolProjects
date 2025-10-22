@@ -1,0 +1,16 @@
+.mainFrame{
+    -fx-background-color: black;
+}
+
+.pane{
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+}
+
+.buttons:hover{
+    -fx-background-color: #ff6666;
+}
+
+.buttons:pressed{
+    -fx-background-color: #ff3333;
+}

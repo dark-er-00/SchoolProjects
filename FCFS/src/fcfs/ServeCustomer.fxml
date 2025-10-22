@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1000.0" styleClass="mainFrame" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fcfs.ServeCustomerController">
+    <stylesheets>
+        <URL value="@servecustomer.css" />
+    </stylesheets>
+   <children>
+      <ImageView blendMode="RED" fitHeight="679.0" fitWidth="1000.0" layoutX="32.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0">
+         <image>
+            <Image url="@simple-background-black-background-minimalism-theater-wallpaper-preview.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="315.0" layoutY="26.0" text="Serve Next Customer" textFill="RED">
+         <font>
+            <Font name="Playbill" size="79.0" />
+         </font>
+         <effect>
+            <DropShadow offsetX="2.0" offsetY="5.0" spread="0.3">
+               <color>
+                  <Color red="0.800000011920929" />
+               </color>
+            </DropShadow>
+         </effect>
+      </Label>
+      <Pane layoutX="247.0" layoutY="152.0" prefHeight="514.0" prefWidth="520.0" styleClass="pane" stylesheets="@servecustomer.css">
+         <children>
+            <Label layoutX="45.0" layoutY="57.0" text="Now Serving: ">
+               <font>
+                  <Font name="Baskerville Old Face" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="125.0" text="Movie:">
+               <font>
+                  <Font name="Baskerville Old Face" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="45.0" layoutY="194.0" text="Tickets:">
+               <font>
+                  <Font name="Baskerville Old Face" size="30.0" />
+               </font>
+            </Label>
+            <Button fx:id="serveBtn" layoutX="174.0" layoutY="331.0" mnemonicParsing="false" styleClass="buttons" stylesheets="@servecustomer.css" text="Serve Next">
+               <font>
+                  <Font name="Baskerville Old Face" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="backToMenu" layoutX="155.0" layoutY="415.0" mnemonicParsing="false" onAction="#menu" styleClass="buttons" stylesheets="@servecustomer.css" text="Back to Menu">
+               <font>
+                  <Font name="Baskerville Old Face" size="30.0" />
+               </font>
+            </Button>
+            <TextField fx:id="nowServing" editable="false" layoutX="207.0" layoutY="48.0" prefHeight="57.0" prefWidth="300.0">
+               <font>
+                  <Font name="Baskerville Old Face" size="30.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="movieName" editable="false" layoutX="134.0" layoutY="115.0" prefHeight="57.0" prefWidth="373.0">
+               <font>
+                  <Font name="Baskerville Old Face" size="30.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="ticketCount" editable="false" layoutX="147.0" layoutY="184.0" prefHeight="57.0" prefWidth="361.0">
+               <font>
+                  <Font name="Baskerville Old Face" size="30.0" />
+               </font>
+            </TextField>
+            <Label layoutX="45.0" layoutY="257.0" text="Arrival Number: ">
+               <font>
+                  <Font name="Baskerville Old Face" size="30.0" />
+               </font>
+            </Label>
+            <TextField fx:id="arrivalTime" editable="false" layoutX="250.0" layoutY="247.0" prefHeight="57.0" prefWidth="259.0">
+               <font>
+                  <Font name="Baskerville Old Face" size="30.0" />
+               </font>
+            </TextField>
+         </children>
+      </Pane>
+      <Button fx:id="exit" layoutX="873.0" layoutY="65.0" mnemonicParsing="false" onAction="#exit" prefHeight="26.0" prefWidth="62.0" styleClass="close" stylesheets="@servecustomer.css" text="X" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+         <font>
+            <Font name="Baskerville Old Face" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1000.0" styleClass="mainFrame" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fcfs.ThirdPageController">
+    <stylesheets>
+        <URL value="@thirdpage.css" />
+    </stylesheets>
+   <children>
+      <ImageView blendMode="RED" fitHeight="670.0" fitWidth="1000.0" layoutX="1.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="1.0" AnchorPane.topAnchor="40.0">
+         <image>
+            <Image url="@simple-background-black-background-minimalism-theater-wallpaper-preview.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="248.0" layoutY="136.0" opacity="0.25" prefHeight="600.0" prefWidth="517.0" styleClass="pane" stylesheets="@thirdpage.css">
+         <children>
+            <Button fx:id="AddCustomer" layoutX="76.0" layoutY="57.0" mnemonicParsing="false" onAction="#addCustomer" prefHeight="74.0" prefWidth="365.0" styleClass="buttons" stylesheets="@thirdpage.css" text="Add Customer to Queue" textAlignment="CENTER">
+               <font>
+                  <Font name="Baskerville Old Face" size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="ViewQueue" layoutX="76.0" layoutY="263.0" mnemonicParsing="false" onAction="#ViewQueue" prefHeight="74.0" prefWidth="365.0" styleClass="buttons" stylesheets="@thirdpage.css" text="View Queue" textAlignment="CENTER">
+               <font>
+                  <Font name="Baskerville Old Face" size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="ServeNextCustomer" layoutX="76.0" layoutY="158.0" mnemonicParsing="false" onAction="#ServeCustomer" prefHeight="74.0" prefWidth="365.0" styleClass="buttons" stylesheets="@thirdpage.css" text="Serve Next Customer" textAlignment="CENTER">
+               <font>
+                  <Font name="Baskerville Old Face" size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="ResetQueue" layoutX="76.0" layoutY="365.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="365.0" styleClass="buttons" stylesheets="@thirdpage.css" text="Reset Queue" textAlignment="CENTER">
+               <font>
+                  <Font name="Baskerville Old Face" size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="BackToWelcome" layoutX="76.0" layoutY="472.0" mnemonicParsing="false" onAction="#welcome" prefHeight="74.0" prefWidth="365.0" styleClass="buttons" stylesheets="@thirdpage.css" text="Back to Welcome" textAlignment="CENTER">
+               <font>
+                  <Font name="Baskerville Old Face" size="22.0" />
+               </font>
+            </Button>
+         </children></Pane>
+      <Label layoutX="382.0" layoutY="28.0" text="Main Menu" textFill="#cc0000">
+         <font>
+            <Font name="Playbill" size="96.0" />
+         </font>
+         <effect>
+            <DropShadow offsetX="2.0" offsetY="3.0" spread="0.3">
+               <color>
+                  <Color red="0.6000000238418579" green="0.0470588244497776" blue="0.0470588244497776" />
+               </color></DropShadow>
+         </effect>
+      </Label>
+      <Button fx:id="close" layoutX="926.0" layoutY="17.0" mnemonicParsing="false" onAction="#exit" prefHeight="26.0" prefWidth="62.0" styleClass="close" stylesheets="@Homepage.css" text="X" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+         <font>
+            <Font name="Baskerville Old Face" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

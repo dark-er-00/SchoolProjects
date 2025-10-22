@@ -1,0 +1,29 @@
+.mainFrame{
+    -fx-background-color: black;
+}
+
+.pane{
+    -fx-opacity: 0.25;
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+}
+
+.close:hover{
+    -fx-background-color: #ff6666;
+}
+
+.close{
+    -fx-opacity: 0.25;
+}
+
+.close:pressed{
+    -fx-background-color: #ff3333;
+}
+
+.buttons:hover{
+    -fx-background-color: #ff6666;
+}
+
+.buttons:pressed{
+    -fx-background-color: #ff3333;
+}

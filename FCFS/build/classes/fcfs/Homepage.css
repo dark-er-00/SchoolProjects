@@ -1,0 +1,29 @@
+.mainFrame{
+    -fx-background-color: black;
+}
+
+.pane{
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+}
+
+.login-btn:hover{
+    -fx-background-color: #ff6666;
+}
+
+.login-btn:pressed{
+    -fx-background-color: #ff3333;
+}
+
+.close{
+    -fx-opacity: 0.25;
+}
+
+.close:hover{
+    -fx-background-color: #ff6666;
+}
+
+.close:pressed{
+    -fx-background-color: #ff3333;
+}
+

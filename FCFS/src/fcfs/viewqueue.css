@@ -1,0 +1,40 @@
+.mainframe{
+    -fx-background-color: black;
+}
+
+.table-view {
+    -fx-font-family: "Baskerville Old Face";
+    -fx-font-size: 15px;
+    -fx-border-color: black;
+    -fx-background-color: #cccccc;
+    -fx-opacity: 0.50;
+}
+
+.table-view .column-header {
+    -fx-background-color: #999999;
+    -fx-text-fill: black;
+}
+
+.table-view .table-cell {
+    -fx-padding: 8px;
+    -fx-text-fill: black;
+    -fx-border-color: transparent black black transparent;
+    -fx-alignment: CENTER-LEFT;
+}
+
+.table-row-column:filled:selected {
+    -fx-background-color: #74b9ff;
+    -fx-text-fill: white;
+}
+
+.buttons{
+    -fx-opacity: 0.25;
+}
+
+.buttons:hover{
+    -fx-background-color: #ff6666;
+}
+
+.buttons:pressed{
+    -fx-background-color: #ff3333;
+}

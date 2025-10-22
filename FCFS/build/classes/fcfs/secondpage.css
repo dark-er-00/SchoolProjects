@@ -1,0 +1,21 @@
+
+.mainFxmlClass {
+
+}
+
+.secondpagebackground{
+    -fx-background-color: black;
+}
+
+.pane{
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+}
+
+.startbtn:hover{
+    -fx-background-color: #ff6666;
+}
+
+.startbtn:pressed{
+    -fx-background-color: #ff3333;
+}
